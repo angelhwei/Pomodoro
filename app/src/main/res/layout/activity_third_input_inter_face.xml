@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".ThirdInputInterFace">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="243dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="321dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Text"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144"
+        app:srcCompat="@drawable/orangerec" />
+
+    <TextView
+        android:id="@+id/text_View2"
+        android:layout_width="322dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:text="這是第三次(最後的)休息"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Text"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <EditText
+        android:id="@+id/Edit_Text"
+        android:layout_width="229dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#81FBC02D"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="記錄你做了什麼吧!"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_View"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="313dp"
+        android:layout_height="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_View2"
+        app:srcCompat="@drawable/yellowrec" />
+
+    <TextView
+        android:id="@+id/Text_View"
+        android:layout_width="258dp"
+        android:layout_height="29dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:text="剛才在做些什麼呢 ?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Text"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_rounde"
+        android:onClick="Save"
+        android:text="@android:string/ok"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_pizza"
+        android:layout_width="146dp"
+        android:layout_height="164dp"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_View"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/pizza" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
